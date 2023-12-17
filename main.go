@@ -22,7 +22,7 @@ func main(){
 
 	//err:=http.ListenAndServe(":8080", nil)
 	if PORT!=""{
-		err = http.ListenAndServe(PORT,nil)
+		err = http.ListenAndServe(":"+PORT,nil)
 	}else{
 
 		PORT = ":8080"
